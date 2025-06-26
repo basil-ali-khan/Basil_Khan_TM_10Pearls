@@ -1,0 +1,117 @@
+.login-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-type-selection {
+  margin-bottom: 5px;
+}
+
+.user-type-label {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.user-type-options {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.user-type-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+  font-weight: 500;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.user-type-option:hover {
+  border-color: #3498db;
+  background-color: #f0f8ff;
+}
+
+.user-type-option.active {
+  border-color: #3498db;
+  background-color: #3498db;
+  color: white;
+}
+
+.user-type-option input[type="radio"] {
+  display: none;
+}
+
+.user-type-option span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #2980b9;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  .login-title {
+    font-size: 1.5rem;
+  }
+}
